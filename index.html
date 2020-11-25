@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<head>
+  <title>Google</title>
+  <style>
+  
+  @import url("reset.css");
+
+  body{
+   font-family: arial,sans-serif;
+  }
+
+  header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 20px 15px 15px 15px;
+  }
+ 
+  header a{
+    color: #000;
+    opacity: 0.75;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 5px;
+  }
+  header a:hover{
+    text-decoration-line: underline;
+  }
+ 
+  .header-left{
+    float: left;
+    padding: 5px 0;
+  }
+ .header-right{
+    float: right;
+  }
+
+  .dots-icon-header{
+    height: 15px;
+    width: 15px;
+  }
+
+  #sign-in-button{
+    margin: 0;
+    padding: 5px 12px;
+    background-color: #4387fd;
+    color: white;
+    font-weight: 700;
+    border-radius: 2px;
+    border: none;
+  }
+
+  li {
+    display: inline;
+  }
+
+  .center{
+    text-align: center;
+  }
+
+  #google-logo{
+    padding: 140px 0px 20px 0px;
+  }
+
+  .search{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid rgb(223, 225, 229);
+    border-radius: 50px;
+  }
+
+  .search:hover{
+    box-shadow: 0 0 5px 3px rgba(242, 242, 242, 0.822);;
+  }
+
+  #search-bar{
+    width: 383px;
+    padding: 10px;
+    border: none;
+    outline: none;
+  }
+
+  .search-icon{
+    height: 20px;
+    width: 20px;
+    padding: 10px;
+  }
+
+  button{
+    padding: 10px 15px;
+    margin-top: 30px;
+    margin-left: 5px;
+    border: none;
+    color: rbg(248, 249, 250);
+    font-size: 14px;
+    border-radius: 4px;
+  }
+
+  button:hover{
+    border: 1px solid rgb(223, 225, 229);
+  }
+
+  footer{
+    position:fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgb(242, 242, 242);
+    font-size: 14px;
+    border: 1px solid #dadce0;
+    line-height: 40px;
+  }
+
+  footer a{
+    color: #70757a;
+    text-decoration: none;
+    padding: 10px;
+  }
+  footer a:hover{
+    text-decoration-line: underline;
+  }
+
+  .footer-left{
+    float:left;
+    padding-left: 15px;
+  }
+  .footer-right{
+    float: right;
+    padding-right: 15px;
+  }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <ul class="header-left">
+      <li><a href="">About</a></li>
+      <li><a href="">Store</a></li>
+    </ul>
+    <ul class="header-right">
+      <li><a href="">Gmail</a></li>
+      <li><a href="">Images</a></li>
+      <li><a href=""><img src="dots.png" class="dots-icon-header"></a></li>
+      <li><button id="sign-in-button">Sign in</button></li>
+    </ul>
+  </header>
+
+  <div class="center">
+    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google logo" id="google-logo">  
+  </div>
+
+  <div class="center">
+   <div class="search">
+      <img src="search.png" alt="magnifying glass" class="search-icon">
+        <form>
+          <input type="text" id="search-bar">
+        </form>
+      <img src="voice.png" alt="microphone" class="search-icon"> 
+    </div> 
+  </div>
+
+  <div class="center">
+    <button>Google Search</button>
+    <button>I'm Feeling Lucky</button>
+  </div>
+
+  <footer>
+    <ul class="footer-left">
+      <li><a href="">Advertising</a></li>
+      <li><a href="">Business</a></li>
+      <li><a href="">How Search works</a></li>
+    </ul>
+    <ul class="footer-right">
+      <li><a href="">Privacy</a></li>
+      <li><a href="">Terms</a></li>
+      <li><a href="">Settings</a></li>
+    </ul>
+  </footer>
+
+</body>
+</html>
